@@ -1,14 +1,14 @@
 # git 常用命令
 
-## **git 'config'**
+## 'config'
 
-## **git 'status'**
+## 'status'
 
-## **git 'add'**
+## 'add'
 
-## **git 'commit'**
+## 'commit'
 
-## **git 'pull'**
+## 'pull'
 
-## **git 'push'**
+## 'push'
 
