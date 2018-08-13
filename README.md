@@ -1,7 +1,7 @@
 # LearningNote
 
 =================
-#git的小白学习笔记
+# git的小白学习笔记
 =================
 
 This is a collection of learning notes git
