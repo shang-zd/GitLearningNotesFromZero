@@ -13,26 +13,28 @@
 `$ git config --global user.email "email@example.com"`
 
 ## git status
-**状态简览**：获取仓库的当前状态，显示哪些文件被更改了
-`git status -s` 令或 `git status --short` 命令使得以更加紧凑的格式输出
+**状态简览**：获取仓库的当前状态，显示哪些文件被更改了  
+`git status -s` 或 `git status --short` 命令使得以更加紧凑的格式输出
 
 
 ## git diff
-`git diff <filename> `显示具体修改了哪些内容
+**查看未暂存**的修改 `git diff <filename> `显示具体修改了哪些内容  
+**查看已暂存**的将要添加到下次提交里的内容，可以用 git diff --cached 命令。（Git 1.6.1 及更高版本还允许使用 git diff --staged，效果是相同的，但更好记些。）
+
 
 
 ## git add
 `git add <filename>` 
-**暂存已修改文件**： 添加文件到仓库等待提交，可以多次使用，且只有`add`后的更改才会被提交
+**暂存已修改文件**： 添加文件到仓库等待提交，可以多次使用，且只有`add`后的更改才会被提交  
 **跟踪新文件**：对于新创建的文件，`add`命令使其更改被git跟踪
 
 ## git commit
-`git commit -m <message>` 完成将更改添加到仓库，注意，此时远程的仓库并没有改变
+`git commit -m <message>` 完成将更改添加到仓库，注意，此时远程的仓库并没有改变  
 <message>信息是必须的，告诉仓库你进行了什么更改，可以避开这个参数，但是最好不要
 
 
 ## git log
-显示从最近到最远的提交`commit`日志， 有多种方式可以控制输出显示形式
+显示从最近到最远的提交`commit`日志， 有多种方式可以控制输出显示形式  
 `--pretty=oneline` 参数使每次`commit`只输出为一行，末尾是`git commit -m <message>`的`<message>`内容
 
 
