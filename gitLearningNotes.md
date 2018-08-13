@@ -193,7 +193,17 @@ git中用`HEAD`来表示当前版本，也就是最新的提交的版本，上�
 - **轻量标签**很像一个不会改变的分支 - 它只是一个特定提交的引用。
  
 **共享标签**  默认情况下，git push 命令并不会传送标签到远程仓库服务器上。 在创建完标签后你必须显式地推送标签到共享服务器上。 这个过程就像共享远程分支一样 - 你可以运行 `git push origin [tagname]`
+甚至一次性推送很多标签，通过` git push origin --tags`
 
+
+## Git 别名
+Git 并不会在你输入部分命令时自动推断出你想要的命令。 如果不想每次都输入完整的 Git 命令，可以通过 git config 文件来轻松地为每一个命令设置一个别名。 这里有一些例子你可以试试：
+* `git config --global alias.co checkout`
+* `git config --global alias.br branch`
+* `git config --global alias.ci commit`
+* `git config --global alias.st status`
+* `git config --global alias.unstage 'reset HEAD --' `
+* `git config --global alias.last 'log -1 HEAD'`
 
  
 ## .gitignore
