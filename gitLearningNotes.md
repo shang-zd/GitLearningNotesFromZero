@@ -36,42 +36,42 @@
 ## git rm
 **移除文件**：要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除（确切地说，是从暂存区域移除），然后提交。可以用 `git rm` 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清
 单中了。  
-**从 Git 仓库中删除**:亦即从暂存区域移除，但仍然保留在当前工作目录,` git rm --cached <filename>`
+**从 Git 仓库中删除** :亦即从暂存区域移除，但仍然保留在当前工作目录,` git rm --cached <filename>`
 
 ## git mv
 **移动文件**  
-**在 Git 中对文件改名**： ` git mv <file_from> <file_to>`  
+**在 Git 中对文件改名** ： ` git mv <file_from> <file_to>`  
 以上一条命令相当于执行如下三条命令：  
-*`mv <file_from> <file_to>`  
-*`git rm <file_from>`  
-*`git add <file_to>`  
+* `mv <file_from> <file_to>`  
+* `git rm <file_from>`  
+* `git add <file_to>`  
 
 ## git log
 **查看提交历史**：显示从最近到最远的提交`commit`日志， 不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。  
 有多种方式可以控制输出显示形式，如：  
-*`git log --pretty=oneline` 参数使每次`commit`只输出为一行，末尾是`git commit -m <message>`的`<message>`内容  
-*`git log -p -<n>` 显示上`-n`次提交历史  
-*`git log --stat` 显示到每次提交的简略的统计信息
-*`git log --pretty=<oneline|short|full|fuller>` 以指定的方式显示提交历史
-*`git log --pretty=format:"%h - %an, %ar : %s"
+* `git log --pretty=oneline` 参数使每次`commit`只输出为一行，末尾是`git commit -m <message>`的`<message>`内容   
+* `git log -p -<n>` 显示上`-n`次提交历史    
+* `git log --stat` 显示到每次提交的简略的统计信息  
+* `git log --pretty=<oneline|short|full|fuller>` 以指定的方式显示提交历史
+* `git log --pretty=format:"%h - %an, %ar : %s"
 `git log --pretty=format`常用的选项  
-|选项 | 说明|
-|:---|:---|
-|%H | 提交对象（commit）的完整哈希字串|
-|%h  |提交对象的简短哈希字串|
-|%T | 树对象（tree）的完整哈希字串|
-|%t | 树对象的简短哈希字串|
-|%P | 父对象（parent）的完整哈希字串|
-|%p | 父对象的简短哈希字串|
-|%an | 作者（author）的名字|
-|%ae | 作者的电子邮件地址|
-|%ad | 作者修订日期（可以用 --date= 选项定制格式）|
-|%ar | 作者修订日期，按多久以前的方式显示|
-|%cn | 提交者（committer）的名字|
-|%ce | 提交者的电子邮件地址|
-|%cd | 提交日期|
-|%cr | 提交日期，按多久以前的方式显示|
-|%s | 提交说明|
+| 选项 | 说明 |  
+| :--- | :--- |  
+| %H | 提交对象（commit）的完整哈希字串 |  
+|%h  |提交对象的简短哈希字串|  
+|%T | 树对象（tree）的完整哈希字串|  
+|%t | 树对象的简短哈希字串|  
+|%P | 父对象（parent）的完整哈希字串|  
+|%p | 父对象的简短哈希字串|  
+|%an | 作者（author）的名字|  
+|%ae | 作者的电子邮件地址|  
+|%ad | 作者修订日期（可以用 --date= 选项定制格式）|  
+|%ar | 作者修订日期，按多久以前的方式显示|  
+|%cn | 提交者（committer）的名字|  
+|%ce | 提交者的电子邮件地址|  
+|%cd | 提交日期|  
+|%cr | 提交日期，按多久以前的方式显示|  
+|%s | 提交说明|  
 
 ## git reset
 回退到之前的版本
