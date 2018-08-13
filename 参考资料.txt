@@ -1,0 +1,8 @@
+
+
+# 1. progit
+下载链接：
+英文版： https://git-scm.com/book/en/v2
+中文版： https://git-scm.com/book/zh/v2
+
+至少阅读前言和第一章，后面的章节根据兴趣阅读
