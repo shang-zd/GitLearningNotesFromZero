@@ -24,7 +24,7 @@
 
 
 ## git add
-`git add <filename>` 
+`git add <filename>`  
 **暂存已修改文件**： 添加文件到仓库等待提交，可以多次使用，且只有`add`后的更改才会被提交  
 **跟踪新文件**：对于新创建的文件，`add`命令使其更改被git跟踪
 
@@ -39,13 +39,19 @@
 **从 Git 仓库中删除**:亦即从暂存区域移除，但仍然保留在当前工作目录,` git rm --cached <filename>`
 
 ## git mv
-**移动文件**:
-**在 Git 中对文件改名**： ` git mv <file_from> <file_to>`
-
+**移动文件**  
+**在 Git 中对文件改名**： ` git mv <file_from> <file_to>`  
+以上一条命令相当于执行如下三条命令：
+`mv <file_from> <file_to>`  
+`git rm <file_from>`  
+`git add <file_to>`  
 
 ## git log
-显示从最近到最远的提交`commit`日志， 有多种方式可以控制输出显示形式  
-`--pretty=oneline` 参数使每次`commit`只输出为一行，末尾是`git commit -m <message>`的`<message>`内容
+**查看提交历史**：显示从最近到最远的提交`commit`日志， 不用任何参数的话，git log 会按提交时间列出所有的更新，最近的更新排在最上面。  
+有多种方式可以控制输出显示形式，如：  
+	`git log --pretty=oneline` 参数使每次`commit`只输出为一行，末尾是`git commit -m <message>`的`<message>`内容  
+	`git log -p -<n>` 显示上`-n`次提交历史  
+	`git log --stat` 显示到每次提交的简略的统计信息
 
 
 ## git reset
