@@ -1,6 +1,12 @@
 # git 常用命令
 
-**所有指令都可以通过`git command --help` 查看其帮助文档**  
+
+##获取帮助
+三种形式获取帮助  
+* `git help <verb>`
+* `git <verb> --help`
+* `man git-<verb>`
+
 
 ## git init
 **在现有目录中初始化仓库**：初始化命令，把当前目录变成git可以管理的仓库`repository`，具体表现为在当前目录下创建一个`.get`目录，并且这个目录是隐藏的，可以用`ls -ah`命令看见  
@@ -13,6 +19,8 @@
 例如，在安装完git后在命令行输入一下命令来配置用户名和邮件，**必须过程**：  
 `git config --global user.name "Your Name"`  
 `git config --global user.email "email@example.com"`
+**检查配置信息** ` git config --list`  
+**检查 Git 的某一项配置** 输入 `git config <key>`， 如`git config user.name`
 
 ## git status
 **状态简览**：获取仓库的当前状态，显示哪些文件被更改了  
