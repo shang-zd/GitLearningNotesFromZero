@@ -6,12 +6,12 @@
 
 
 ## 配置文本编辑器
-以**notepad++**为例，命令：
+以**notepad++** 为例，命令：
 git config --global core.editor \
 "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 注意书写格式，C:/Program Files/Notepad++为notepad++.exe的实际安装路径
 
-**设置在bash中用notepa++打开文档**以供编辑：
+**设置在bash中用notepa++打开文档** 以供编辑：
 
 在git的安装目录下有个etc的文件夹，在bash.bashrc的文件（C:\Program Files\Git\etc\bash.bashrc）最后添加上：
 alias notepad++=\
